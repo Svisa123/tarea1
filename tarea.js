@@ -34,8 +34,9 @@ scene("game", () => {
       producePipes();
     });
   }
-
-  producePipes();
+  onUpdate("pipe", (pipe) => {
+    pipe.move(-160, 0);
+});
 
   const player = add([
     sprite("birdy"),
