@@ -9,7 +9,7 @@ scene("game", () => {
   const right = "right";
 
   add([sprite("pipe", { width: width(), height: height() })]);
-
+//comentario
   const PIPE_GAP = 120;
   function producePipes() {
     const offset = rand(-64, 64);
